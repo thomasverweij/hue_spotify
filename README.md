@@ -19,7 +19,7 @@ python3 -m venv .v && source .v/bin/activate && pip install -r requirements.txt
 - edit credentials in run_app.sh
 
 ## run
-- run command (on first run: follow the steps to set up authentication):
 ```sh
 sh run_app.sh
 ```
+!! make sure to follow the steps to set up authentication when running this for the first time
