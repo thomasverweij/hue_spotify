@@ -7,22 +7,19 @@ This is just an extremely simple experiment for now.
 - [spotify api credentials](https://developer.spotify.com/dashboard/)
 - ip address of hue bridge
 - python3
+- git
 
 ## setup
-run the following commands (fill in your secrets/id/ip):
+run the following commands:
 ```bash
 git clone https://github.com/thomasverweij/hue_spotify.git
 cd hue_spotify
 python3 -m venv .v && source .v/bin/activate && pip install -r requirements.txt
-export SPOTIFY_CLIENT_ID='<client id>'
-export SPOTIFY_SECRET='<client secret>'
-export SPOTIFY_USERNAME='<spotify user id>'
-export HUE_IP='<hue bridge ip>'
-
 ```
-## run:
-after setup, run:
+## run
+- setup app
+- edit run_app.sh with your credentials/information
+- run it (on first run follow the steps to set up authentication)
 ```bash
-python -m hue_spotify
+bash run_app.sh
 ```
-you will be prompted to authenticate hue and spotify. after that open [http://127.0.0.1:8080/](http://127.0.0.1:8080/) for the app

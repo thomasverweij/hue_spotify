@@ -42,7 +42,7 @@ def spotify_client():
     return sp or False
 
 def hue_bridge(ip):
-    bridge = Bridge(ip, config_file_path='.python_phue')
+    bridge = Bridge(ip)
     try:
         bridge.connect()
         return bridge
