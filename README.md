@@ -10,15 +10,16 @@ This is just an extremely simple experiment for now.
 - git
 
 ## setup
-run the following commands:
+- run the following commands:
 ```sh
 git clone https://github.com/thomasverweij/hue_spotify.git
 cd hue_spotify
 python3 -m venv .v && source .v/bin/activate && pip install -r requirements.txt
 ```
-## run
 - edit credentials in run_app.sh
-- run command (on first run: follow the steps to set up authentication)
+
+## run
+- run command (on first run: follow the steps to set up authentication):
 ```sh
 sh run_app.sh
 ```
