@@ -1,8 +1,10 @@
 from flask import Flask, render_template, redirect
+import phue
 from phue import Bridge
 import spotipy
 import spotipy.util as util
 import os
+import sys
 
 hue_ip = os.getenv('HUE_IP')
 username = os.getenv('SPOTIFY_USERNAME')
@@ -50,5 +52,9 @@ def hue_bridge(ip):
         print('hue bridge connection error')
         return false
 
-hb = hue_bridge(hue_ip)
+try:
+    hb = hue_bridge(hue_ip)
+except phue.PhueRegistrationException:
+    print('Press button of bridge within 30 seconds and run again')
+    sys.exit()
 sp = spotify_client()

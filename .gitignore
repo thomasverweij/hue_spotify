@@ -1,6 +1,6 @@
 __pycache__
 .python_phue
 .cache-*
-secrets_env.sh.local
+run_app.sh.local
 .venv
 .v

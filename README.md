@@ -11,15 +11,14 @@ This is just an extremely simple experiment for now.
 
 ## setup
 run the following commands:
-```bash
+```sh
 git clone https://github.com/thomasverweij/hue_spotify.git
 cd hue_spotify
 python3 -m venv .v && source .v/bin/activate && pip install -r requirements.txt
 ```
 ## run
-- setup app
-- edit run_app.sh with your credentials/information
-- run it (on first run follow the steps to set up authentication)
-```bash
-bash run_app.sh
+- edit credentials in run_app.sh
+- run command (on first run: follow the steps to set up authentication)
+```sh
+sh run_app.sh
 ```
