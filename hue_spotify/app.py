@@ -12,7 +12,7 @@ client_id=os.getenv('SPOTIFY_CLIENT_ID')
 client_secret=os.getenv('SPOTIFY_SECRET')
 redirect_uri='http://localhost/'
 scope = 'user-modify-playback-state user-read-playback-state'
-group = ':)'
+group = os.getenv('HUE_ROOM')
 
 app = Flask(__name__)
 
